@@ -5,13 +5,9 @@
 #ifndef STATEONE_TESTCOMPILE_H
 #define STATEONE_TESTCOMPILE_H
 
-#include <iostream>
-
-using namespace std;
+#include <stdio.h>
 
 //.h文件不参与编译,所以找不到实现  .h只放声明.声明可以多次.
-void testCompile() {
-    cout << "testComplie" << endl;
-}
+void testCompile();
 
 #endif //STATEONE_TESTCOMPILE_H

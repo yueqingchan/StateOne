@@ -11,6 +11,7 @@
 #include "include/ExerciseOne.h"
 #include "include/FilePartOne.h"
 #include "include/ArrayPart.h"
+#include "testAbout/testCompile.h"
 
 using namespace std;
 
@@ -26,6 +27,8 @@ void array_part();
 
 int main() {
 
+    testCompile();
+
 //    assert(1);                          //false 的话 直接abort!!
 
 //    cout<<"assert  here"<<endl;
@@ -35,7 +38,7 @@ int main() {
 //    fprintf(stderr, "divied num  0 ... ");
 
 //    file_part();
-    base_one_part();
+//    base_one_part();
 //    string_part();
 //    exercise_one_part();
 //    array_part();
