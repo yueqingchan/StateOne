@@ -1,0 +1,8 @@
+//
+// Created by 87572 on 19/4/21.
+//
+
+#ifndef STATEONE_TESTCOMPILE2_H
+#define STATEONE_TESTCOMPILE2_H
+
+#endif //STATEONE_TESTCOMPILE2_H

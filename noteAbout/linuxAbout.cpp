@@ -11,10 +11,15 @@
 *
 */
 
-/**预处理：gcc -E hello.c -o hello.i
+/**
+ * 多个.c文件的时候,无法-o 指定目标.
+ *
+ * 预处理：gcc -E hello.c -o hello.i
+ *         1.宏文件展开  2.替换宏  3.去掉注释  4.宏判断
  * 编  译：gcc -S hello.i -o hello.s
  * 汇  编：gcc -c hello.s -o hello.o
  * 链  接：gcc    hello.o -o hello_elf
+ *
  *
  * 这几步并不是一定依次执行可以直接将.c  文件替换中间文件!
 */

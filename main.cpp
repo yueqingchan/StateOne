@@ -11,7 +11,12 @@
 #include "include/ExerciseOne.h"
 #include "include/FilePartOne.h"
 #include "include/ArrayPart.h"
-#include "testAbout/testCompile.h"
+#include "testAbout/testCompile3.h"
+//#include "testAbout/testCompile.h"
+
+void testCompileImInH();
+
+//static int g_test = 20;  //自定义变量.h 文件是会参与编译的?
 
 using namespace std;
 
@@ -27,7 +32,7 @@ void array_part();
 
 int main() {
 
-    testCompile();
+//    testCompile();
 
 //    assert(1);                          //false 的话 直接abort!!
 
@@ -42,6 +47,8 @@ int main() {
 //    string_part();
 //    exercise_one_part();
 //    array_part();
+//    cout<<g_test<<endl;
+    testCompileImInH3();
     return 0;
 }
 
