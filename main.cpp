@@ -12,7 +12,10 @@
 #include "include/FilePartOne.h"
 #include "include/ArrayPart.h"
 #include "testAbout/testCompile3.h"
+#include <stdint.h>
+#include <error.h>
 //#include "testAbout/testCompile.h"
+#include <stddef.h>
 
 void testCompileImInH();
 
@@ -32,6 +35,18 @@ void array_part();
 
 int main() {
 
+#define  TEXT
+#define  IMAGE
+
+#ifdef TEXT
+
+#ifdef IMAGE
+    printf("TEXT\n");
+#endif
+    printf("IMAGE\n");
+
+#endif
+
 //    testCompile();
 
 //    assert(1);                          //false 的话 直接abort!!
@@ -48,7 +63,7 @@ int main() {
 //    exercise_one_part();
 //    array_part();
 //    cout<<g_test<<endl;
-    testCompileImInH3();
+//    testCompileImInH3();
     return 0;
 }
 

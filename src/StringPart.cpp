@@ -26,7 +26,8 @@ void desc_string(void) {
  */
 void desc_const_string(void) {
     char str1[] = "HelloWorld!";
-    char *str2 = "HelloWorld!";
+    char *str2 = "Hell3"
+                 "oWorld!";
     printf("stack--String--%d\n", str1);
     printf("const--String--%d\n", str2);
 }
