@@ -5,6 +5,7 @@
 /**
  * K1:=====================================================
  * file a.out
+ * ls -l a.txt  查看文件的数据
  * nm a.out             符号表
  * ---------测试,查看几个变量的区 data bss   text   stack  dump
  * readelf -a  a.out    查看二进制的内容

@@ -58,7 +58,7 @@ int main() {
 //    fprintf(stderr, "divied num  0 ... ");
 
 //    file_part();
-//    base_one_part();
+    base_one_part();
 //    string_part();
 //    exercise_one_part();
 //    array_part();
@@ -89,7 +89,8 @@ void base_one_part() {
 //    base_one_memory_set();
 //    base_one_memory_copy();
 //    base_one_memory_compare();
-    base_one_memory_enum();
+//    base_one_memory_enum();
+    test_time_random();
 }
 
 void exercise_one_part() {
@@ -102,7 +103,7 @@ void file_part() {
 
 //    file_part_one_open_fle();
 //    file_part_one_put_c();
-//    file_part_one_get_c();
+    file_part_one_get_c();
 //    file_part_one_put_s();
 //    file_part_one_get_s();
 
@@ -113,7 +114,7 @@ void file_part() {
 
 //    file_part_one_seek_file();
 
-    file_part_one_seek_big();
+//    file_part_one_seek_big();
 
 }
 

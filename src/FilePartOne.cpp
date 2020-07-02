@@ -136,20 +136,18 @@ void file_part_one_get_c() {
     }
     char ch = NULL;
 
-#if 0
+#if 1
 
-    int num=0;
+    /*int num=0;
 
     while (num<10) {
         ch = fgetc(file);
         cout << "file_part_one_get_c    :" << ch << endl;
         num++;
-    }
-/*
+    }*/
     while ((ch = fgetc(file)) != EOF) {     //文本用这个最保险  EOF =-1
         cout << "file_part_one_get_c    :" << ch << endl;
     }
-*/
 
 #else
     int num = feof(file);                   //二进制判断用这个
@@ -157,7 +155,7 @@ void file_part_one_get_c() {
     while (!num)     //文件没有结束，则执行循环
     {
         ch = static_cast<char>(fgetc(file));
-        printf("%d", ch);
+//        printf("%d", ch);
         printf("%c\n", ch);
         num = feof(file);
         cout << "num  Inner :" << num << endl;
@@ -350,7 +348,7 @@ void file_part_one_big_file() {
 
     FILE *file_src = fopen(big_file_path, "rb");     //7,375,866 字节
 
-    char *dest_space = "E:/dest.PDF";
+    char *dest_space = const_cast<char *>("E:/dest.PDF");
 
     FILE *file_dest = fopen(dest_space, "wb");
 
